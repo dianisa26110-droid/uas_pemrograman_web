@@ -90,6 +90,18 @@ $result = mysqli_query($mysqli, "SELECT * FROM alat ORDER BY id DESC");
         
         .btn-delete { color: #cd5c5c; }
         .btn-delete:hover { text-decoration: underline; color: #ff8484; }
+
+        /* Style Footer Identitas */
+        .footer-identitas {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 13px;
+            letter-spacing: 1px;
+            color: #8da9c4;
+            border-top: 1px dashed #556b2f;
+            padding-top: 15px;
+            text-transform: uppercase;
+        }
     </style> 
 </head> 
 <body> 
@@ -121,5 +133,10 @@ $result = mysqli_query($mysqli, "SELECT * FROM alat ORDER BY id DESC");
         } 
         ?> 
     </table> 
+
+    <div class="footer-identitas">
+        CREATED BY: DIAN DWI IRMAWATI (2202505106)
+    </div>
+
 </body> 
 </html>
