@@ -16,36 +16,14 @@ $result = mysqli_query($mysqli, "SELECT * FROM alat ORDER BY id DESC");
             color: #e2e8dd; 
         } 
 
-        /* Container Atas untuk Judul Baru dan Kartun Dokter */
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 3px double #556b2f;
-            padding-bottom: 15px;
-            margin-bottom: 20px;
-        }
-
         h2 {
             text-transform: uppercase;
             letter-spacing: 2px;
+            border-bottom: 3px double #556b2f;
+            padding-bottom: 15px;
+            margin-top: 0;
+            margin-bottom: 20px;
             color: #cbd5e1;
-            margin: 0;
-        }
-
-        /* Desain Maskot Dokter Medis Lokal */
-        .doctor-avatar {
-            width: 85px; 
-            height: auto;
-            filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.5));
-            animation: floatEffect 3s ease-in-out infinite;
-        }
-
-        /* Animasi Mengambang */
-        @keyframes floatEffect {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-6px); }
-            100% { transform: translateY(0px); }
         }
         
         /* Tombol Tambah ala Papan Komando */
@@ -116,10 +94,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM alat ORDER BY id DESC");
 </head> 
 <body> 
 
-    <div class="header-container">
-        <h2>🪖 Sie Har Alkes - Inventarisasi Alat</h2>
-        <img src="dokter.png" alt="Dokter SIMRS" class="doctor-avatar">
-    </div>
+    <h2>🪖 Sie Har Alkes - Inventarisasi Alat</h2>
 
     <a href="add.php" class="btn-tambah">[+] REGISTRASI ALAT BARU</a>
 
